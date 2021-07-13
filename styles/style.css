@@ -62,7 +62,6 @@ a {
 }
 #banner:hover  .banner-image {
        transform: scale(.9);
-       overflow: hidden;
        transition: .5s linear;
 }
 .half-width {
@@ -124,7 +123,9 @@ a {
     Top player section styles
 --------------------- */
 #top-players {
+    margin-top: 70px;
     padding: 70px 0px;
+    background-color: #f7f7f7;
 }
 .top-players-title {
     text-align: center;
@@ -158,6 +159,56 @@ a {
     color: #d15783;
 }
 
+
+
+/* ------------------------
+    Newsletter section styles
+--------------------- */
+#newsletter-area {
+    padding: 60px 0px 80px 0px;
+    background-color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .newsletter {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .newsletter-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter-input {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 2px solid #e02c6d;
+    transition: .3s linear;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .newsletter-form input {
+      outline: 0;
+  }
+  .submit-btn {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #e02c6d;
+    padding: 10px 25px;
+    border: 2px solid #e02c6d;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+  }
 
 
 
