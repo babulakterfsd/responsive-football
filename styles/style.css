@@ -1,0 +1,85 @@
+/* -------  Fonts -------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+/* ------------------------
+    Utility Styles
+--------------------- */
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn span {
+    width: 88px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 7px;
+}
+.btn i {
+   transition: .5s linear;
+}
+.btn:hover i {
+    padding-left: 10px;
+    transition: .3s linear;
+}
+
+
+
+/* ------------------------
+    Banner section styles
+--------------------- */
+#banner {
+    width: 100%;
+    display: flex;
+    background-color: #2D25A0;
+    padding: 50px 0px;
+}
+#banner:hover  .banner-image {
+       transform: scale(.9);
+       overflow: hidden;
+       transition: .5s linear;
+}
+.half-width {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.banner-title {
+    width: 485px;
+    height: 230px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+.half-width .banner-image {
+    width: 556px;
+    height: 438px;
+    transition: .8s linear;
+}
