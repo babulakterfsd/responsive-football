@@ -120,6 +120,46 @@ a {
 }
 
 
+/* ------------------------
+    Top player section styles
+--------------------- */
+#top-players {
+    padding: 70px 0px;
+}
+.top-players-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.top-players-description {
+    width: 60%;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+.top-players-list {
+    display: flex;
+    justify-content: space-around;
+}
+.top-players-list .top-player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.top-players-list h5 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 10px 15px;
+}
+.players-record {
+    margin-left: 25px;
+}
+.players-record span {
+    font-weight: 900;
+    color: #d15783;
+}
+
+
+
 
 
 /* ------------------------
