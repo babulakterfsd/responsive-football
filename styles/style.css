@@ -91,7 +91,7 @@ a {
 --------------------- */
 #players {
     width: 1050px;
-    margin: 0px auto;
+    margin: 0px auto 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 27px 30px;
@@ -120,12 +120,42 @@ a {
 
 
 /* ------------------------
+    highlights section styles
+--------------------- */
+#highlights {
+    width: 100%;
+    display: flex;
+    padding: 100px 0px;
+    margin-bottom: 70px;
+    background-color: #F7F7F7;
+}
+.highlights-info {
+    padding: 0px 50px;
+}
+.highlights-title {
+    width: 485px;
+    height: 230px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+ .highlights-image {
+    width: 567px;
+    height: 427px;
+}
+
+
+
+
+
+
+/* ------------------------
     Top player section styles
 --------------------- */
 #top-players {
     margin-top: 70px;
     padding: 70px 0px;
-    background-color: #f7f7f7;
 }
 .top-players-title {
     text-align: center;
@@ -161,13 +191,13 @@ a {
 
 
 
+
 /* ------------------------
     Newsletter section styles
 --------------------- */
 #newsletter-area {
     padding: 60px 0px 80px 0px;
-    background-color: #f7f7f7;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: #F7F7F7
   }
 
   .newsletter {
