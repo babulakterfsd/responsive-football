@@ -323,8 +323,6 @@ a {
     .players {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 15px;
     }
     .player {
