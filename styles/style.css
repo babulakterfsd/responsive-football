@@ -1,31 +1,35 @@
 /* -------  Fonts -------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* reset browsers default */
-body {
+/* -------------------------------
+    Resets Browsers Default Behave
+------------------------------------ */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
+/* -------------------------------
+    Utility Styles to reuse
+------------------------------------ */
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
 a {
-  text-decoration: none;
-}
-
-input:focus {
-  outline: 0 !important;
+    text-decoration: none;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
-
+  
 p {
-  line-height: 26px;
+    line-height: 26px;
 }
 
-/* Common CSS  */
 .container {
   width: 1080px;
   max-width: 100%;
@@ -83,14 +87,15 @@ p {
   color: #ffffff;
 }
 
-/* Button */
+/* -------------------------------
+    Button Styles
+------------------------------------ */
 .button {
   font-weight: 500;
   color: #ffffff;
   background-color: #e02c6d;
   padding: 10px 25px;
-  border: 2px solid #e02c6d;
-  transition: all 0.3s ease;
+  transition: .5s linear;
   display: inline-block;
   cursor: pointer;
   margin-top: 25px;
@@ -98,23 +103,28 @@ p {
 
 .button-icon {
   margin-left: 8px;
+  transition: .3s linear;
 }
 
 .button:hover {
-  color: #e02c6d;
-  background-color: #ffffff;
-}
-
-.button-hover-white-border:hover {
-  border-color: #ffffff;
-}
-
-/* Banner Area */
-#banner-area {
-  background-color: #10437a;
   color: #ffffff;
-  padding: 90px 0;
-  transition: transform 0.5s;
+  background-color: #463EB9;
+}
+
+.button:hover .button-icon {
+    padding-left: 5px;
+    transition: .3s linear;
+}
+.button:last-child {
+    border: 0px solid transparent;
+}
+/* -------------------------------
+    Banner Area Styles
+------------------------------------ */
+#banner-area {
+  background-color:#2D25A0;
+  color: #ffffff;
+  padding: 70px 0;
 }
 
 .banner-heading {
@@ -124,14 +134,17 @@ p {
 }
 
 .banner-image {
-  transition: transform 0.3s ease;
+  transition: .5s linear;
 }
 
 #banner-area:hover .banner-image {
-  transform: scale(0.95);
+  transform: scale(.9);
+  transition: .5s linear;
 }
 
-/* Players Area */
+/* -------------------------------
+    Players Area Styles
+------------------------------------ */
 #players-area {
   padding: 70px 0;
 }
@@ -159,25 +172,31 @@ p {
   margin-bottom: 15px;
 }
 
-/* Highlights Area */
+/* -------------------------------
+    Highlights Area Styles
+------------------------------------ */
 #highlights-area {
   padding: 50px 0 100px 0;
 }
 
-/* Stats Area */
+
+
+/* -------------------------------
+    Statistics Area Styles
+------------------------------------ */
 #stats-area {
   padding: 60px 0 80px 0;
-  background-color: #10437a;
+  background-color: #2D25A0;
 }
 
 .stats-box {
   padding: 15px;
   border-radius: 10px;
-  background-color: #2061a7;
+  background-color: #463eb9;
 }
 
 .stats-label {
-  color: #dde8ff;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -186,7 +205,9 @@ p {
   font-size: 30px;
 }
 
-/* Newsletter Area */
+/* -------------------------------
+    Newsletter Area Styles
+------------------------------------ */
 #newsletter-area {
     padding: 60px 0 80px 0;
     background-color: #f7f7f7;
@@ -203,6 +224,9 @@ p {
     display: flex;
     flex-direction: column;
 }
+input:focus {
+    outline: 0px;
+}
   
 .newsletter-input {
     text-align: center;
@@ -216,7 +240,10 @@ p {
     margin-top: 10px;
 }
 
-/* Footer Area */
+
+/* -------------------------------
+    Footer Area Styles
+------------------------------------ */
 #footer-area {
   padding: 50px 0;
   text-align: center;
@@ -243,10 +270,15 @@ p {
   margin: 0 5px;
 }
 
-/* Media Query */
-/* For Tablet Device */
-@media (max-width: 991px) {
-  /* Common CSS Responsive */
+
+
+
+/* -------------------------------
+    Media Query for responsivness
+------------------------------------ */
+
+/* For Tablet Devices */
+@media only screen and (max-width: 991px) {
   .width-1-of-4 {
     width: 50%;
     padding: 15px;
@@ -266,21 +298,22 @@ p {
     line-height: 40px;
   }
 
-  /* Banner Area Responsive */
   .banner-heading {
     font-size: 36px;
     line-height: 50px;
   }
 
-  /* Players Area Responsive */
   .players {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* For Tablet Device */
-@media (max-width: 767px) {
-  /* Common CSS Responsive */
+
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 767px) {
   .flex {
     flex-direction: column;
   }
@@ -305,18 +338,15 @@ p {
     padding-bottom: 0;
   }
 
-  /* Players Area Responsive */
   .players {
     grid-template-columns: repeat(1, 1fr);
     gap: 25px;
   }
 
-  /* Footer Area Responsive */
   .footer-logo {
     width: 270px;
   }
 
-  /* Sections Padding Responsive */
   #banner-area {
     padding: 60px 0;
   }
