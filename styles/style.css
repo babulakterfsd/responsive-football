@@ -89,9 +89,11 @@ a {
 /* ------------------------
     Players section styles
 --------------------- */
-#players {
-    width: 1050px;
+#container {
+    width: 1140px;
     margin: 0px auto 70px;
+}
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 27px 30px;
@@ -270,4 +272,20 @@ a {
 .copyright-text {
     margin-top: 20px;
     text-align: center;
+}
+
+
+
+
+/* ------------------------------
+    Media Query for responsiveness
+---------------------------------- */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    
 }
