@@ -283,14 +283,14 @@ a {
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
     main {
-        max-width: 375px;
+        max-width: 360px;
         overflow: hidden;
     }
     #container {
         margin-bottom: 30px;
     }
     #banner {
-        width: 375px;
+        width: 360px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -336,7 +336,7 @@ a {
     }
     #highlights {
         padding: 0px;
-        width: 375px;
+        width: 360px;
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -365,6 +365,7 @@ a {
     }
     #top-players {
         margin-top: 20px;
+        max-width: 360px;
     }
     .top-players-list {
         display: flex;
@@ -387,7 +388,7 @@ a {
         padding: 0px 10px;
     }
     #footer {
-        width: 300px;
+        width: 360px;
         margin: 0px;
         display: flex;
         flex-direction: column;
