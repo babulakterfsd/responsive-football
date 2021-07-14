@@ -125,7 +125,6 @@ a {
     highlights section styles
 --------------------- */
 #highlights {
-    width: 100%;
     display: flex;
     padding: 100px 0px;
     margin-bottom: 70px;
@@ -282,22 +281,17 @@ a {
 ---------------------------------- */
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
-    main {
-        max-width: 360px;
-        overflow: hidden;
-    }
     #container {
         margin-bottom: 30px;
     }
     #banner {
-        width: 360px;
-        height: auto;
         display: flex;
         flex-direction: column;
     }
     .half-width {
         width: 100%;
         justify-content: start;
+        flex-direction: column;
         margin-left: 10px;
     }
     .banner-title {
@@ -327,8 +321,10 @@ a {
         margin-top: 30px;
     }
     .players {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 15px;
     }
     .player {
@@ -336,8 +332,9 @@ a {
     }
     #highlights {
         padding: 0px;
-        width: 360px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
     }
     .highlights-info {
@@ -388,7 +385,7 @@ a {
         padding: 0px 10px;
     }
     #footer {
-        width: 360px;
+        width: 688px;
         margin: 0px;
         display: flex;
         flex-direction: column;
@@ -406,5 +403,121 @@ a {
 
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width:992px) {
-    
+    #container {
+        margin-bottom: 30px;
+    }
+    #banner {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .half-width {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .banner-title {
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #ffffff;
+        margin-bottom: 27px;
+    }
+    .btn {
+        display: inline-block;
+        width: 168px;
+        height: 44px;
+        background-color: #E02C6D;
+        padding: 5px 10px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .half-width .banner-image {
+        width: 329px;
+        height: 258px;
+        transition: .8s linear;
+        margin-top: 30px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 15px;
+        padding: 15px;
+    }
+    .player {
+        padding: 15px;
+    }
+    #highlights {
+        padding: 0px 0px 15px 0px;
+        margin: 0px auto 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .highlights-info {
+        width: 329px;
+        height: 300px;
+        padding: 0px;
+    }
+    .highlights-title {
+        width: 294px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlights-description {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .highlights-image {
+        width: 328px;
+        height: 248px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #top-players {
+        margin-top: 20px;
+    }
+    .top-players-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-players-list .top-player-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    .top-players-list h5 {
+        text-align: start;
+    }
+    .players-record {
+        margin-left: 0px;
+    }
+    .newsletter-form {
+        padding: 0px 10px;
+    }
+    #footer {
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-image img {
+        width: 250px;
+    }
+    .copyright-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
