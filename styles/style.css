@@ -282,7 +282,125 @@ a {
 ---------------------------------- */
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
-    
+    main {
+        max-width: 375px;
+        overflow: hidden;
+    }
+    #container {
+        margin-bottom: 30px;
+    }
+    #banner {
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .half-width {
+        width: 100%;
+        justify-content: start;
+        margin-left: 10px;
+    }
+    .banner-title {
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #ffffff;
+        margin-bottom: 27px;
+    }
+    .btn {
+        display: inline-block;
+        width: 168px;
+        height: 44px;
+        background-color: #E02C6D;
+        padding: 5px 10px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .half-width .banner-image {
+        width: 329px;
+        height: 258px;
+        transition: .8s linear;
+        margin-top: 30px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 15px;
+    }
+    .player {
+        padding: 15px;
+    }
+    #highlights {
+        padding: 0px;
+        width: 375px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .highlights-info {
+        width: 329px;
+        height: 300px;
+        padding: 0px;
+    }
+    .highlights-title {
+        width: 294px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlights-description {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .highlights-image {
+        width: 328px;
+        height: 248px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #top-players {
+        margin-top: 20px;
+    }
+    .top-players-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-players-list .top-player-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    .top-players-list h5 {
+        text-align: start;
+    }
+    .players-record {
+        margin-left: 0px;
+    }
+    .newsletter-form {
+        padding: 0px 10px;
+    }
+    #footer {
+        width: 300px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-image img {
+        width: 250px;
+    }
+    .copyright-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 /* tablet devices */
